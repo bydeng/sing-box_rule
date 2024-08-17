@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "jable.tv",
+        "hanime1.me",
+        "hembed.com",
+        "mushroomtrack.com",
+      ]
+    }
+  ]
+}
