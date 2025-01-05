@@ -97,23 +97,14 @@
         "auto_detect_interface": true,
         "final": "🐠 漏网之鱼",
     "rules": [
-        {
-            "ip_cidr": ["101.32.208.229/32","8.218.1.244/32","47.242.104.123/32","8.218.62.19/32","8.222.221.192/32","103.106.191.154/32","112.91.237.0/32"],
-            "outbound": "🎯 全球直连"
-          },
-          {
-            "domain_suffix": "ddyb.cc",
-            "outbound": "🎯 全球直连"
-          },
-          {
-            "domain_suffix": ["jable.tv","hanime1.me","hembed.com","mushroomtrack.com"],
-            "outbound": "📺️ AV"
-          },
       { "type": "logical", "mode": "or", "rules": [{ "port": 53 }, { "protocol": "dns" }], "outbound": "dns-out" },
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
       { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连" },
       { "rule_set": ["geosite-private", "geoip-private"], "outbound": "🎯 全球直连" },
+      { "ip_cidr": ["101.32.208.229/32","8.218.1.244/32","47.242.104.123/32","8.218.62.19/32","8.222.221.192/32","103.106.191.154/32","112.91.237.0/32"],"outbound": "🎯 全球直连"},
+      { "domain_suffix": "ddyb.cc","outbound": "🎯 全球直连"},
+      { "domain_suffix": ["jable.tv","hanime1.me","hembed.com","mushroomtrack.com"],"outbound": "📺️ AV"},
       { "rule_set": "geosite-chat", "outbound": "🤖 OpenAI" },
       { "rule_set": "geosite-pikpak", "outbound": "💾 Pikpak" },
       { "rule_set": "geosite-github", "outbound": "👨‍💻 Github" },
